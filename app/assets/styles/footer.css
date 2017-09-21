@@ -1,0 +1,20 @@
+.footer{
+  width: 100vw;
+  display: block;
+  padding: 20px 0;
+  background-color:#ffffff;
+  text-align: center;
+}
+
+.footer__text{
+  color:	#000000;
+  font-family: "Poiret One", cursive;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+@media (min-width: 2560px) {
+  .footer__text{
+    font-size: 20px;
+  }
+}

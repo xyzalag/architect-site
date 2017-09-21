@@ -1,0 +1,131 @@
+
+.home{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  top:0;
+}
+
+.home__background{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+  background-image: url("https://s26.postimg.org/tyr24i0u1/home.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.home__title__container{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.home__title{
+  margin-top: 0px;
+  padding: 15px 20px 15px 20px;
+  color:#282828;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  font-size: 95px;
+  text-align: center;
+  cursor: default;
+  letter-spacing: 3px;
+}
+
+.home__subtitle{
+  margin-top: -40px;
+  margin-bottom: 0px;
+  padding: 2px 5px 2px 5px;
+  color: #282828;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  font-size: 45px;
+  text-align: center;
+  cursor: default;
+  letter-spacing: 3px;
+}
+.home__button__container{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.home__button{
+  display:block;
+  margin: 0 auto;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  border: 1.5px solid #282828;
+  background-color: #D8D8D8;
+  background: rgba(216, 216, 216, .3);
+  color: #000000;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.home__button:hover {
+  background-color:  #ACACAC;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.home:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 2560px) {
+  .home__title {
+    font-size: 120px;
+  }
+  .home__subtitle {
+    font-size: 55px;
+  }
+  .home__button {
+    width: 140px;
+    height: 50px;
+    font-size: 40px;
+  }
+
+}
+@media screen and (max-width: 750px) {
+    .home__button__container {
+      display: none;
+    }
+    .home__button {
+      display: none;
+    }
+    .home__title {
+      font-size: 70px;
+      letter-spacing: normal;
+    }
+}
+
+@media (min-height: 1000px) {
+  .home{
+    height: 80vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 1024px) {
+  .home__button{
+    display: none;
+  }
+  }
+}
