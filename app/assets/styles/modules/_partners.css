@@ -1,0 +1,51 @@
+.partners {
+  position: relative;
+  width: 100vw;
+  height: max-content;
+  background-color: #F0F2EF;
+
+  &__container {
+    width: 100%;
+    margin: 40px auto;
+
+    @mixin atLarge {
+      width: 66.66%;
+      margin: 80px auto;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
+
+    @mixin atLarge {
+      display: inline-block;
+      width: 250px;
+      height: 50px;
+      box-shadow: 3px 13px 35px -5px rgba(135,135,135,1);
+      padding: 40px 50px;
+      margin: 30px;
+    }
+
+    @mixin atLarger {
+      margin: 50px 100px;
+      padding: 60px 70px;
+      width: 350px;
+      height: 60px;
+    }
+
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  width: 100vw;
+  display: block;
+  padding: 20px 0;
+  background-color:#ffffff;
+  text-align: center;
+
+  &__text {
+    color:	#000;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    @mixin atLarger {
+      font-size: 20px;
+    }
+  }
+}

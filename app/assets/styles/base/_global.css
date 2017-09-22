@@ -15,17 +15,22 @@ img {
   height: auto;
 }
 
-* {
+.no-outline {
+  outline: none;
+  color: #fff;
+}
+
+/*{
   box-sizing: border-box;
 }
-/*a{
+a{
   color: #fff;
 }
 
 a:hover{
   color:$neonGreen;
-}*/
+}
 
 .link-none {
   text-decoration: none;
-}
+}*/

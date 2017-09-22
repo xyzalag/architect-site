@@ -1,0 +1,29 @@
+.title {
+  width: 150px;
+  margin: 0 auto;
+  display:block;
+  padding: 1%;
+  color:  #000000;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+  cursor: default;
+  border-bottom: 0.5px solid #000000;
+
+  @mixin atSmall {
+    width: 200px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @mixin atLarger {
+    font-size: 60px;
+    width: 400px;
+  }
+}

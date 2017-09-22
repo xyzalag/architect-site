@@ -36,25 +36,6 @@ $(document).ready(function(){
     }
   });
 });
-/***
-if (navigator.userAgent.search("Firefox") >= 1) {
- $(document).ready(function() {
-     $('.about__avatar').mouseenter(function(){
-       $('.about__description').stop();
-       $('.about__avatar').stop();
-     });
-   });
- }
-
-if ( $(window).width() > 1024) {
-if (navigator.userAgent.search("Firefox") >= 1) {
- $(document).ready(function() {
-   $('.about__avatar').mouseenter(function(){
-    });
-  });
- }
-}
-***/
 
   /***ABOUT ANIMATION***/
 if ( $(window).width() > 1024) {
@@ -77,13 +58,13 @@ $(document).ready(function() {
 /***GALLERY***/
 if ( $(window).width() > 1024) {
 $(document).ready(function() {
-  $('.text__container').mouseenter(function() {
+  $('.project__text__container').mouseenter(function() {
     $(this).find('h5').css({'display':'inline'});
-    $(this).find('.main__image').css({'opacity':'0.2'});
+    $(this).find('.project__thumbnail').css({'opacity':'0.2'});
   });
-  $('.text__container').mouseleave(function() {
+  $('.project__text__container').mouseleave(function() {
     $(this).find('h5').css({'display':'none'});
-    $(this).find('.main__image').css({'opacity':'1.0'});
+    $(this).find('.project__thumbnail').css({'opacity':'1.0'});
   });
 });
 }
@@ -106,14 +87,29 @@ $(document).ready(function() {
           }
       });
 
+$(document).ready(function() {
+  $("[data-fancybox]").fancybox({
+    buttons : [
+  		'slideShow',
+  		'fullScreen',
+  		'close'
+  	],
+    animationEffect : "zoom",
+    transitionEffect : "fade",
+    transitionDuration : 500,
+  });
+
+});
+
 /***SLIDER***/
 $(document).ready(function() {
 
-  $("#owl-demo").owlCarousel({
+  $(".owl-carousel").owlCarousel({
 
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
+      items: 1,
       singleItem:true,
       autoPlay : true,
       navigation : false
@@ -132,12 +128,12 @@ $(document).ready(function() {
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
-            $('#scroll').fadeIn();
+            $('.scroll-arrow').fadeIn();
         } else {
             $('#scroll').fadeOut();
         }
     });
-    $('#scroll').click(function(){
+    $('.scroll-arrow').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });

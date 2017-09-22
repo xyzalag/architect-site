@@ -1,0 +1,99 @@
+.about {
+  background-color:#ffffff;
+  padding-bottom: 64px;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+
+
+  @mixin atLarge {
+    height:100vh;
+    text-align: center;
+  }
+
+  &__avatar {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 10px 5px 5px 5px;
+    box-shadow: 3px 13px 35px -5px rgba(135,135,135,1);
+
+    @mixin atMedium {
+      margin: 5px;
+      height: 400px;
+      width: 400px;
+    }
+
+    @mixin atLarge {
+      display: block;
+      margin: auto;
+      position: absolute
+    }
+
+    @mixin atLargeMedium {
+      width: 450px;
+      height: 450px;
+    }
+
+    @mixin atLarger {
+      height: 700px;
+      width: 700px;
+    }
+  }
+
+  &__description {
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.2;
+    width: 300px;
+    height: auto;
+    text-align:center;
+    background-color: #ffffff;
+    padding: 1%;
+    border-bottom: 0.5px solid #000000;
+    border-top: 0.5px solid #000000;
+    display: inline-block;
+    margin: 5px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: relative;
+
+    @mixin atMedium {
+      width: 350px;
+      height: 350px;
+    }
+
+    @mixin atLarge {
+      display: none;
+      margin: auto;
+      position: absolute;
+    }
+
+    @mixin atLargeMedium {
+      width: 400px;
+      height: 400px;
+      font-size: 23px;
+    }
+
+    @mixin atLarger {
+      width: 650px;
+      height: 650px;
+      font-size: 38px;
+    }
+
+    &:first-letter {
+      font-size: 200%;
+      line-height: normal;
+    }
+  }
+}

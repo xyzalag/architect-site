@@ -1,7 +1,7 @@
 .row {
 
   &--bg-color {
-    background-color: rgba($lightBlue, 0.5);
+    background-color: rgba($mainGrey, 0.5);
   }
 
   @mixin clearfix;
