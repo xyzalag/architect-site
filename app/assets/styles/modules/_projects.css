@@ -24,7 +24,8 @@
     height: 270px;
     text-align: center;
     padding: 7px;
-    transition: 0.2s all ease;
+    transition: 0.4s all ease;
+
 
     @mixin atMedium {
       width: 300px;
@@ -43,6 +44,7 @@
       height: 550px;
       padding: 40px;
     }
+
   }
 
   &__label {
@@ -58,6 +60,8 @@
     display:inline;
     padding: 2px 0;
     background-color: rgba(255,255,255,0.5);
+    transition: 0.4s all ease;
+
 
     @mixin atLarge {
       display:none;
@@ -74,10 +78,12 @@
     color: white;
     font-size: 16px;
     font-family:'Quicksand', sans-serif;
-    font-weight: 600;
+    font-weight: lighter;
     padding:0;
     color: #000000;
     text-align: center;
+    transition: 0.4s all ease;
+
 
     @mixin atLarge {
       font-size: 27px;
@@ -95,5 +101,11 @@
   &__text__container {
     position: relative;
     display: inline-block;
+    transition: 0.4s all ease;
+
+    &:hover {
+      transform: scale(0.8);
+      background-color: rgba(221,221,221,0.3);
+    }
   }
 }

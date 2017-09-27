@@ -44,6 +44,7 @@ position: relative;
 @media (min-width: 2560px) {
   #owl-demo .item img{
     height:800px;
+    width: 60%;
   }
   h4 span {
     font-size: 60px;

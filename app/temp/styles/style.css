@@ -66,7 +66,7 @@ a:hover{
 }ul.topnav li {display: inline-block;}ul.topnav li a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 21px;
-  font-weight: lighter;
+  font-weight: 400;
   color: #282828;
   text-decoration: none;
   display: inline-block;
@@ -164,7 +164,7 @@ a:hover{
     /*font-family: 'Cormorant Garamond', serif;*/
     /*font-family: 'Cinzel', serif;*/
     font-family: 'Italiana', serif;
-    font-weight: 100;
+    font-weight: lighter;
     font-size: 60px;
     text-align: center;
     cursor: default;
@@ -274,7 +274,7 @@ a:hover{
     color: black;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.2;
     width: 300px;
     height: auto;
@@ -350,6 +350,7 @@ position: relative;
 }@media (min-width: 2560px) {
   #owl-demo .item img{
     height:800px;
+    width: 60%;
   }
   h4 span {
     font-size: 60px;
@@ -384,22 +385,26 @@ position: relative;
     height: 270px;
     text-align: center;
     padding: 7px;
-    -webkit-transition: 0.2s all ease;
-    transition: 0.2s all ease;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+
   }@media (min-width: 800px) {.project__thumbnail {
       width: 300px;
       height: 300px;
       padding: 20px
+
   }
   }@media (min-width: 1440px) {.project__thumbnail {
       width: 350px;
       height: 350px;
       padding: 30px
+
   }
   }@media (min-width: 2560px) {.project__thumbnail {
       width: 550px;
       height: 550px;
       padding: 40px
+
   }
   }.project__label {
     position: absolute;
@@ -414,6 +419,8 @@ position: relative;
     display:inline;
     padding: 2px 0;
     background-color: rgba(255,255,255,0.5);
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
   }@media (min-width: 1010px) {.project__label {
       display:none;
       bottom: 0;
@@ -427,10 +434,12 @@ position: relative;
     color: white;
     font-size: 16px;
     font-family:'Quicksand', sans-serif;
-    font-weight: 600;
+    font-weight: lighter;
     padding:0;
     color: #000000;
     text-align: center;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
   }@media (min-width: 1010px) {.project__span {
       font-size: 27px;
       font-weight: 500;
@@ -444,19 +453,23 @@ position: relative;
   }.project__text__container {
     position: relative;
     display: inline-block;
-  }.partners {
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+  }.project__text__container:hover {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+      background-color: rgba(221,221,221,0.3);
+    }.partners {
   position: relative;
-  width: 100vw;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   background-color: #F0F2EF;
+  width: 100vw;
 }.partners__container {
     width: 100%;
-    margin: 40px auto;
+    margin: auto;
+    background-color: #F0F2EF;
   }@media (min-width: 1010px) {.partners__container {
       width: 66.66%;
-      margin: 80px auto;
+      margin: auto;
       display:-webkit-box;
       display:-ms-flexbox;
       display:flex;
@@ -466,6 +479,13 @@ position: relative;
       -webkit-box-align:center;
           -ms-flex-align:center;
               align-items:center
+  }
+  }.partners__element {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+  }@media (min-width: 1010px) {.partners__element {
+      margin: 60px auto
   }
   }.partners__icon {
     text-align: center;
@@ -485,7 +505,7 @@ position: relative;
       -webkit-box-shadow: 3px 13px 35px -5px rgba(135,135,135,1);
               box-shadow: 3px 13px 35px -5px rgba(135,135,135,1);
       padding: 40px 50px;
-      margin: 30px
+      margin: 30px 40px
   }
   }@media (min-width: 2560px) {.partners__icon {
       margin: 50px 100px;

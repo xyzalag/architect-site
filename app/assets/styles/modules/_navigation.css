@@ -17,7 +17,7 @@ ul.topnav li {display: inline-block;}
 ul.topnav li a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 21px;
-  font-weight: lighter;
+  font-weight: 400;
   color: #282828;
   text-decoration: none;
   display: inline-block;
