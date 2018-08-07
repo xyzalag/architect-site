@@ -4,10 +4,9 @@
   display:block;
   padding: 1%;
   color:  #000000;
-  /*font-family: 'Quicksand', sans-serif;*/
-  font-family: 'Poiret One', cursive;
+  font-family: 'Italiana', serif;
+  font-weight: 500;
   letter-spacing: 1px;
-  font-weight: lighter;
   font-size: 30px;
   text-align: center;
   cursor: default;
@@ -20,6 +19,10 @@
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 20px;
+  }
+
+  @mixin atMedium {
+    margin-top: 50px;
   }
 
   @mixin atLarger {

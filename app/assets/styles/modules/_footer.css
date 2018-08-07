@@ -4,6 +4,7 @@
   padding: 20px 0;
   background-color:#ffffff;
   text-align: center;
+  box-shadow: .5rem 0 1rem rgba(0,0,0,.15);
 
   &__text {
     color:	#000;

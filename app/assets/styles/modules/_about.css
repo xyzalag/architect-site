@@ -22,7 +22,7 @@
     top: 0;
     bottom: 0;
     margin: 10px 5px 5px 5px;
-    box-shadow: 3px 13px 35px -5px rgba(135,135,135,1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
     @mixin atMedium {
       margin: 5px;
